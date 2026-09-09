@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "autoanvil",
+  "version": "${version}",
+  "name": "Auto Anvil",
+  "description": "An in-Anvil helper for selecting enchantments, planning low-cost combinations, and optionally automating available anvil operations.",
+  "authors": ["AutoAnvil"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.autoanvil.AutoAnvilClient"
+    ]
+  },
+  "mixins": [
+    "autoanvil.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.4",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*"
+  }
+}
